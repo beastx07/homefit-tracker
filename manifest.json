@@ -1,0 +1,11 @@
+{
+  "name": "HomeFit Tracker",
+  "short_name": "HomeFit",
+  "description": "Track your home workouts and progress",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#101418",
+  "theme_color": "#101418",
+  "icons": []
+}
