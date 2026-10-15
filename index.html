@@ -115,5 +115,17 @@ function resetData(){if(confirm("Delete all saved progress?")){data={checks:{},d
 $("date").value=today();$("sd").value=today();$("date").onchange=render;$("sd").onchange=stepsLoad;
 render();renderWeek();renderGuide();summary();
 </script>
+  <link rel="manifest" href="./manifest.json">
+
+<script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("./sw.js")
+        .catch((error) => {
+          console.error("Offline setup failed:", error);
+        });
+    });
+  }
+</script>
 </body>
 </html>
